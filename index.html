@@ -22,7 +22,7 @@
                 <p class="name" style="text-align: center;">
                   Won Jun Kim
                 </p>
-                <p>I'm a M. Sc. candidate advised by <a href="https://scholar.google.com/citations?user=HNMjoNEAAAAJ&hl=en">Jong Chul Ye</a> at <a href="https://gsai.kaist.ac.kr/">KAIST AI</a>'s <a href="https://bispl.weebly.com/">Bio-Imaging, Signal Processing & Learning Lab</a> in Seoul, South Korea.
+                <p>I'm a M. Sc. candidate advised by Prof. <a href="https://scholar.google.com/citations?user=HNMjoNEAAAAJ&hl=en">Jong Chul Ye</a> at <a href="https://gsai.kaist.ac.kr/">KAIST AI</a>'s <a href="https://bispl.weebly.com/">Bio-Imaging, Signal Processing & Learning Lab</a> in Seoul, South Korea.
                 </p>
                 <p>
                   Before that, I went to medical school at Korea University and received my M.D.
@@ -44,8 +44,10 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I am interested <span class="highlight"> applying generative AI to interpretably model complex phenomena </span> e.g. multimodality, behavior of neural networks, biomedical data, etc.
+                  I am interested applying generative AI to interpretably model complex phenomena e.g. multimodality, behavior of neural networks, biomedical data, etc.
                 </p>
+                <p></p>
+                <p><small><sup>&#8224;</sup>Equal contribution (co-first authors)</small></p>
               </td>
             </tr>
           </tbody></table>
@@ -103,8 +105,8 @@
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='freemcg_image'>
-            <img src='images/freemcg_after.png' width="160"></div>
-          <img src='images/freemcg_before.png' width="160">
+            <img src='images/freemcg_cntf.mp4' width="160"></div>
+          <img src='images/freemcg_title.png' width="160">
         </div>
         <script type="text/javascript">
           function freemcg_start() {
@@ -118,13 +120,13 @@
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2304.14473">
+        <a href="https://arxiv.org/abs/2411.15265">
           <span class="papertitle">Derivative-Free Diffusion Manifold-Constrained Gradients for Unified XAI</span>
         </a>
         <br>
-        <strong>Won Jun Kim</strong>, 
-        Hyungjin Chung,
-        Jaemin Kim,
+        <strong>Won Jun Kim<sup>&#8224;</sup></strong>, 
+        Hyungjin Chung<sup>&#8224;</sup>,
+        Jaemin Kim<sup>&#8224;</sup>,
         Sangmin Lee,
         Byeongsu Sim,
         Jong Chul Ye
@@ -132,178 +134,175 @@
         <em>arXiv preprint</em>, 2024
         <p></p>
         <p>
-          Counterfactual generation and feature attribution <em>without access to the model or its gradients</em>.
+          Counterfactual generation and feature attribution <em>without any access to the model or its gradients</em>.
         </p>
       </td>
       </tr>
-    
-    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
+
+
+      <tr onmouseout="llmcxr_stop()" onmouseover="llmcxr_start()" bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='ever_image'>
-					  <img src='images/freemcg_after.png' width=100%>
+          <div class="two" id='llmcxr_image'>
+					  <img src='images/llmcxr_after.png' width=100%>
 					</div>
-          <img src='images/freemcg_before.png' width=100%>
+          <img src='images/llmcxr_before.png' width=100%>
         </div>
         <script type="text/javascript">
-          function ever_start() {
-            document.getElementById('ever_image').style.opacity = "1";
+          function llmcxr_start() {
+            document.getElementById('llmcxr_image').style.opacity = "1";
           }
 
-          function ever_stop() {
-            document.getElementById('ever_image').style.opacity = "0";
+          function llmcxr_stop() {
+            document.getElementById('llmcxr_image').style.opacity = "0";
           }
-          ever_stop()
+          llmcxr_stop()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://half-potato.gitlab.io/posts/ever/">
-			<span class="papertitle">EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis</span>
+        <a href="https://arxiv.org/abs/2305.11490">
+			<span class="papertitle">LLM-CXR: Instruction-Finetuned LLM for CXR Image Understanding and Generation</span>
         </a>
         <br>
-				<a href="https://half-potato.gitlab.io/">Alexander Mai</a>, 
-				<a href="https://phogzone.com/">Peter Hedman</a>,
-				<a href="https://grgkopanas.github.io/">George Kopanas</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://scholar.google.com/citations?user=ozNFrecAAAAJ&hl=en">David Futschik</a>,
-        <a href="https://xharlie.github.io/">Qiangeng Xu</a>,
-        <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://www.zhangyinda.com/">Yinda Zhang</a>
+				Suhyeon Lee<sup>&#8224;</sup>,
+				<strong>Won Jun Kim</strong><sup>&#8224;</sup>,
+        Jinho Chang,
+        Jong Chul Ye
 				<br>
-        <em>arXiv</em>, 2024
+        <em>ICLR</em>, 2024
         <br>
-        <a href="https://half-potato.gitlab.io/posts/ever/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2410.01804">arXiv</a>
         <p></p>
         <p>
-				Raytracing constant-density ellipsoids yields more accurate and flexible radiance fields than splatting Gaussians, and still runs in real-time.
+				Leveraging an LLM's language-based reasoning ability for multimodal alignment.
         </p>
       </td>
     </tr>
 
-    <tr onmouseout="freemcg_stop()" onmouseover="freemcg_start()">
+    <tr onmouseout="adiposity_stop()" onmouseover="adiposity_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='freemcg_image'>
-					  <img src='images/freemccg_after.png' width=100%>
+          <div class="two" id='adiposity_image'>
+					  <img src='images/adiposity.jpeg' width=100%>
 					</div>
-          <img src='images/freemcg_before.png' width=100%>
+          <img src='images/adiposity.jpeg' width=100%>
         </div>
         <script type="text/javascript">
-          function freemcg_start() {
-            document.getElementById('freemcg_image').style.opacity = "1";
+          function adiposity_start() {
+            document.getElementById('adiposity_image').style.opacity = "1";
           }
 
-          function freemcg_stop() {
-            document.getElementById('freemcg_image').style.opacity = "0";
+          function adiposity_stop() {
+            document.getElementById('adiposity_image').style.opacity = "0";
           }
-          freemcg_stop()
+          adiposity_stop()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://half-potato.gitlab.io/posts/ever/">
-			<span class="papertitle">EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis</span>
+        <a href="https://academic.oup.com/eurheartj/article/42/34/3388/6333298?login=false">
+			<span class="papertitle">Association between adiposity and cardiovascular outcomes: an umbrella review and meta-analysis of observational and Mendelian randomization studies</span>
         </a>
         <br>
-				<a href="https://half-potato.gitlab.io/">Alexander Mai</a>, 
-				<a href="https://phogzone.com/">Peter Hedman</a>,
-				<a href="https://grgkopanas.github.io/">George Kopanas</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://scholar.google.com/citations?user=ozNFrecAAAAJ&hl=en">David Futschik</a>,
-        <a href="https://xharlie.github.io/">Qiangeng Xu</a>,
-        <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://www.zhangyinda.com/">Yinda Zhang</a>
+				Min Seo Kim,
+				<strong>Won Jun Kim</strong>,
+        Amit V Khera,
+        Jong Yeob Kim,
+        Dong Keon Yon,
+        Seung Won Lee,
+        Jae Il Shin,
+        Hong-Hee Won
 				<br>
-        <em>arXiv</em>, 2024
+        <em>Eur Heart J</em>, 2021
         <br>
-        <a href="https://half-potato.gitlab.io/posts/ever/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2410.01804">arXiv</a>
         <p></p>
         <p>
-				Raytracing constant-density ellipsoids yields more accurate and flexible radiance fields than splatting Gaussians, and still runs in real-time.
+				Systematic review of the relationship between adiposity (obesity) and cardiovascular illness.
         </p>
       </td>
     </tr>
 
+    <tr onmouseout="robotsurg_stop()" onmouseover="robotsurg_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='robotsurg_image'>
+					  <img src='images/robotsurg.png' width=100%>
+					</div>
+          <img src='images/robotsurg.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function robotsurg_start() {
+            document.getElementById('robotsurg_image').style.opacity = "1";
+          }
 
+          function robotsurg_stop() {
+            document.getElementById('robotsurg_image').style.opacity = "0";
+          }
+          robotsurg_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://academic.oup.com/eurheartj/article/42/34/3388/6333298?login=false">
+			<span class="papertitle">Comprehensive Learning Curve of Robotic Surgery: Discovery From a Multicenter Prospective Trial of Robotic Gastrectomy</span>
+        </a>
+        <br>
+				Min Seo Kim,
+				<strong>Won Jun Kim</strong>,
+        Woo Jin Hyung,
+        Hyoung-Il Kim,
+        Sang-Uk Han,
+        Young-Woo Kim,
+        Keun Won Ryu,
+        Sungsoo Park
+				<br>
+        <em>Ann Surg</em>, 2021
+        <br>
+        <p></p>
+        <p>
+				Tracking of operation times and complication rates in robotic gastrectomy as the surgeons' experience grows.
+        </p>
+      </td>
+    </tr>
 
+    <tr onmouseout="covid_stop()" onmouseover="covid_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='covid_image'>
+					  <img src='images/covid.png' width=100%>
+					</div>
+          <img src='images/covid.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function covid_start() {
+            document.getElementById('covid_image').style.opacity = "1";
+          }
+
+          function covid_stop() {
+            document.getElementById('covid_image').style.opacity = "0";
+          }
+          covid_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003501">
+			<span class="papertitle">Comparative efficacy and safety of pharmacological interventions for the treatment of COVID-19: A systematic review and network meta-analysis</span>
+        </a>
+        <br>
+				Min Seo Kim,
+        Min Ho An,
+				<strong>Won Jun Kim</strong>,
+        Tae-Ho Hwang
+				<br>
+        <em>PLoS Medicine</em>, 2020
+        <br>
+        <p></p>
+        <p>
+				Systematic review of the evidence behind COVID-19 treatments in the first wave of the pandemic.
+        </p>
+      </td>
+    </tr>
 
 
           </tbody></table>
 
           
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-            <tr>
-              <td>
-                <h2>Miscellanea</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-            
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
-              <td width="75%" valign="center">
-                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
-                <br>
-                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
-                <br>
-                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-                <br>
-                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
-                <br>
-                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-                <br>
-                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/cs188.jpg" alt="cs188">
-              </td>
-              <td width="75%" valign="center">
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-                <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-                <br>
-                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-              </td>
-            </tr>
-            
-
-            <tr>
-              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                <h2>Basically <br> Blog Posts</h2>
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-                <br>
-                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-                <br>
-                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-                <br>
-                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
-              </td>
-            </tr>
-            
-            
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
   </body>
 </html>
