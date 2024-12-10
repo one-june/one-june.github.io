@@ -54,7 +54,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
     <tr onmouseout="freemcg_stop()" onmouseover="freemcg_start()" bgcolor="#ffffd0">
-      <td style="padding:16px;width:20%;vertical-align:middle">
+      <!-- <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='freemcg_image'>
             <img src='images/freemcg_cntf.mp4' width="160"></div>
@@ -70,7 +70,43 @@
           }
           freemcg_stop()
         </script>
+      </td> -->
+
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id="freemcg_container" style="position: relative; width: 160px;">
+            <video id="freemcg_video" style="width:100%; border-radius: 8px; display: none;" muted loop>
+              <source src="images/freemcg_cntf.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <img id="freemcg_image" src="images/freemcg_title.png" style="width:100%; border-radius: 8px;">
+          </div>
+        </div>
+        <script type="text/javascript">
+          const freemcgVideo = document.getElementById('freemcg_video');
+          const freemcgImage = document.getElementById('freemcg_image');
+          const freemcgContainer = document.getElementById('freemcg_container');
+      
+          function freemcg_start() {
+            freemcgImage.style.display = "none";
+            freemcgVideo.style.display = "block";
+            freemcgVideo.play();
+          }
+      
+          function freemcg_stop() {
+            freemcgVideo.style.display = "none";
+            freemcgVideo.pause();
+            freemcgVideo.currentTime = 0; // Reset the video to the beginning
+            freemcgImage.style.display = "block";
+          }
+      
+          freemcgContainer.addEventListener("mouseover", freemcg_start);
+          freemcgContainer.addEventListener("mouseout", freemcg_stop);
+        </script>
       </td>
+      
+
+
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://arxiv.org/abs/2411.15265">
           <span class="papertitle">Derivative-Free Diffusion Manifold-Constrained Gradients for Unified XAI</span>
